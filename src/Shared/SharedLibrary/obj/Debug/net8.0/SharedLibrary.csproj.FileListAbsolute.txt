@@ -1,0 +1,12 @@
+D:\.NET\API-Vendas\src\Shared\SharedLibrary\obj\Debug\net8.0\SharedLibrary.csproj.AssemblyReference.cache
+D:\.NET\API-Vendas\src\Shared\SharedLibrary\obj\Debug\net8.0\SharedLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\.NET\API-Vendas\src\Shared\SharedLibrary\obj\Debug\net8.0\SharedLibrary.AssemblyInfoInputs.cache
+D:\.NET\API-Vendas\src\Shared\SharedLibrary\obj\Debug\net8.0\SharedLibrary.AssemblyInfo.cs
+D:\.NET\API-Vendas\src\Shared\SharedLibrary\obj\Debug\net8.0\SharedLibrary.csproj.CoreCompileInputs.cache
+D:\.NET\API-Vendas\src\Shared\SharedLibrary\bin\Debug\net8.0\SharedLibrary.deps.json
+D:\.NET\API-Vendas\src\Shared\SharedLibrary\bin\Debug\net8.0\SharedLibrary.dll
+D:\.NET\API-Vendas\src\Shared\SharedLibrary\bin\Debug\net8.0\SharedLibrary.pdb
+D:\.NET\API-Vendas\src\Shared\SharedLibrary\obj\Debug\net8.0\SharedLibrary.dll
+D:\.NET\API-Vendas\src\Shared\SharedLibrary\obj\Debug\net8.0\refint\SharedLibrary.dll
+D:\.NET\API-Vendas\src\Shared\SharedLibrary\obj\Debug\net8.0\SharedLibrary.pdb
+D:\.NET\API-Vendas\src\Shared\SharedLibrary\obj\Debug\net8.0\ref\SharedLibrary.dll
