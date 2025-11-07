@@ -1,0 +1,73 @@
+# Dockerignore para otimizar o build dos containers
+# Exclui arquivos desnecessários do contexto de build
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build outputs
+**/bin/
+**/obj/
+**/out/
+**/TestResults/
+**/coverage/
+
+# Node modules (se houver frontend)
+node_modules/
+npm-debug.log*
+
+# Logs
+*.log
+logs/
+
+# Arquivos temporários
+*.tmp
+*.temp
+
+# Configurações locais
+appsettings.Development.json
+appsettings.Local.json
+
+# Bancos de dados locais
+*.db
+*.sqlite
+
+# Chaves e certificados
+*.pfx
+*.p12
+*.key
+*.pem
+
+# Docker
+Dockerfile*
+docker-compose*
+.dockerignore
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Documentação
+README.md
+*.md
+
+# Arquivos de configuração de desenvolvimento
+.env
+.env.local
+.env.development
+
+# Cache do NuGet
+**/.nuget/
+**/packages/
+
+# Arquivos de backup
+*.bak
+*.backup
