@@ -1,0 +1,57 @@
+# Configuração do Prometheus para coleta de métricas
+# Define targets e regras de scraping para os microserviços
+
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+
+# Configuração de alertas (se necessário)
+rule_files:
+  # - "alert_rules.yml"
+
+# Configuração de scraping
+scrape_configs:
+  # Automonitoramento do Prometheus
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+
+  # API Gateway
+  - job_name: 'api-gateway'
+    static_configs:
+      - targets: ['api-gateway:8080']
+    metrics_path: '/metrics'
+    scrape_interval: 30s
+
+  # Serviço de Vendas
+  - job_name: 'vendas-service'
+    static_configs:
+      - targets: ['vendas-service:8080']
+    metrics_path: '/metrics'
+    scrape_interval: 30s
+
+  # Serviço de Estoque
+  - job_name: 'estoque-service'
+    static_configs:
+      - targets: ['estoque-service:8080']
+    metrics_path: '/metrics'
+    scrape_interval: 30s
+
+  # PostgreSQL
+  - job_name: 'postgres'
+    static_configs:
+      - targets: ['postgres:5432']
+    scrape_interval: 60s
+
+  # RabbitMQ
+  - job_name: 'rabbitmq'
+    static_configs:
+      - targets: ['rabbitmq:15692']
+    scrape_interval: 60s
+
+  # Nginx
+  - job_name: 'nginx'
+    static_configs:
+      - targets: ['nginx:8080']
+    metrics_path: '/nginx-status'
+    scrape_interval: 30s
